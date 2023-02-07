@@ -7,9 +7,11 @@ function main(type) {
         return beer.type.includes(type)
     })
     filtered.forEach(function (beer) {console.log(beer.name) })
+    return type.filter(x=> x.type.includes('Ale'))
+
 }
 
-main(process.argv[2])
+console.log(main(getBeers()))
 
 // Usage: node filterByType.js <type>
 // Example: node filterByType.js ALE
