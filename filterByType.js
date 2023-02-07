@@ -7,7 +7,8 @@ function main(type) {
         return beer.type.includes(type)
     })
     filtered.forEach(function (beer) {console.log(beer.name) })
-    return type.filter(x=> x.type.includes('Ale'))
+    //ez itt lent a szép és rövid, csak bele van égetve az "Ale"
+   // return type.filter(x=> x.type.includes('Ale'))
 
 }
 
