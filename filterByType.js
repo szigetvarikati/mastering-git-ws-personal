@@ -1,11 +1,11 @@
 const getBeers = require('./data')
 
 function main(type) {
-    console.log('type:', type)
+    return type.filter(x=> x.type.includes('Ale'))
 
 }
 
-main(process.argv[2])
+console.log(main(getBeers()))
 
 // Usage: node filterByType.js <type>
 // Example: node filterByType.js ALE
