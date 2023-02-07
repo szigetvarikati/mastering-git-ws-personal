@@ -1,11 +1,11 @@
 const getBeers = require('./data')
 
 function main(property) {
-    console.log('property:', property)
+    return property.filter(x=> x.abv >= 7)
 
 }
 
-main(process.argv[2])
+console.log(main(getBeers()))
 
 // Usage: node sortBy.js <score|abv>
 // Example: node sortBy.js score
